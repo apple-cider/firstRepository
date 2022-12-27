@@ -1,0 +1,9 @@
+;;parsing a string of numbers to a list in common lisp
+;;credit to batsov.com blog article
+
+(with-input-from-string(var1 "3.14 56 789 2.34")
+  (loop for x = (read var1 nil nil)
+        while x
+        collect x)
+;;=> (3.14 56 789 2.34)
+
