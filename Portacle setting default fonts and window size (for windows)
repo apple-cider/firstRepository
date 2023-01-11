@@ -1,0 +1,9 @@
+;; to set default fonts for starting portacle, add the following line to the user.el file that can be found in the config directory under the portacle directory,
+;; e.g C:\portacle\config\user.el
+
+(add-to-list 'initial-frame-alist '(font . "Noto Mono-11")   ; note do not add a quote (') to the beginning of this line
+;; DO NOT TYPE '(add-to-list 'initial-frame-alist .......) (see the quote before the parenthesis)
+;;this example sets the font to Noto Mono size 11.  For reference, can go to options menu in emacs and look for details in "set default font" selection
+
+;; Portacle saves the frame (emacs lingo) size when the session is quit.  The next time portacle starts up, it will start with the last frame size.
+The above has been works for me.
