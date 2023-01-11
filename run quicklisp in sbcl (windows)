@@ -1,0 +1,9 @@
+;;to run quicklisp in sbcl, install sbcl in a directory name without spaces, e.g C:\sbcl and not in C:\Program Files\sbcl
+;;to get quicklisp up and running in sbcl, run sbcl from command line in command prompt window.  Should be in sbcl mode with a * prompt.
+;;then run the following commands (can be found in quicklisp website) which works for me
+
+(load "~/quicklisp.lisp")  ; ie load quicklisp using filepath  where quicklisp had been installed
+(quicklisp-quickstart: install)
+(ql: add-to-init-file)
+
+;;the above commands should be enough to start quicklisp whenever an sbcl-slime session starts in emacs.
