@@ -3,7 +3,8 @@
 ;;then run the following commands (can be found in quicklisp website) which works for me
 
 (load "~/quicklisp.lisp")  ; ie load quicklisp using filepath  where quicklisp had been installed
+OR run sbcl from the dir/folder in which the file quicklisp.lisp is located. Then (load "quicklisp.lisp) will suffice.
 (quicklisp-quickstart: install)
-(ql: add-to-init-file)
+(ql: add-to-init-file) - found that this command is optional.
 
 ;;the above commands should be enough to start quicklisp whenever an sbcl-slime session starts in emacs.
